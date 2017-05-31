@@ -11,13 +11,22 @@
         // list-style: none;
         // position: fixed;
     }
-    .thumbnail {
-        padding: 0;
-        border: none;
-        img {
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-            width: 100%;
+    .feed {
+        list-style: none;
+        .thumbnail {
+            padding: 0;
+            border: none;
+            img {
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                width: 100%;
+            }
+        }
+        .impar {
+            width: 48%;
+            h5 > a {
+                font-size: 10px;
+            }
         }
     }
     .login {
@@ -30,7 +39,7 @@
         }
         button {
             color: white;
-            font-size: 14px;
+            font-size: 1vw;
             width: 100%;
             &#facebook {
                 background-color: #2b4170;
