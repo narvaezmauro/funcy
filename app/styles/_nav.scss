@@ -1,0 +1,22 @@
+.navbar.navbar {
+    background-color: #FFFFFF;
+    .navbar-nav {
+        text-align: right;
+        #carrito {
+            color: grey;
+            margin-top: 15px;
+            background-color: #FFFFFF;
+            border-style: none;
+            border-left-style: outset;
+            border-left-width: thin;
+        }
+    }
+}
+
+// .    navbar-brand.navbar-brand {
+//     padding-left: 21vw;
+// }
+.navbar-form > input {
+    background-color: #F2F2F2;
+    width: wrap-content;
+}
