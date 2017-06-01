@@ -16,6 +16,14 @@
         .thumbnail {
             padding: 0;
             border: none;
+            .caption {
+                border-bottom: solid;
+                border-width: thin;
+                border-color: grey;
+                a {
+                    margin-top: 5px;
+                }
+            }
             // button {
             //     background-color: transparent;
             //     border: none;
@@ -26,6 +34,9 @@
                 border-top-right-radius: 4px;
                 width: 100%;
                 padding: 0;
+            }
+            .likesFeed {
+                margin: 10px;
             }
             // }
         }
@@ -43,36 +54,34 @@
             font-size: 1vw;
             width: 100%;
             &#facebook {
-                background-color: #2b4170;
-                /* fallback color */
-                background: -moz-linear-gradient(top, #3b5998, #2b4170);
-                background: -ms-linear-gradient(top, #3b5998, #2b4170);
-                background: -webkit-linear-gradient(top, #3b5998, #2b4170);
-                border: 1px solid #2b4170;
-                text-shadow: 0 -1px -1px #1f2f52;
+                border-color: #334d7a #2f4872 #2a4168;
+                background: -webkit-linear-gradient(top, #5375b1, #446295);
+                text-shadow: 0 -1px 0 #344d7a;
             }
             &#facebook:hover {
-                background-color: #3b5998;
-                /* fallback color */
-                background: -moz-linear-gradient(top, #2b4170, #3b5998);
-                background: -ms-linear-gradient(top, #2b4170, #3b5998);
-                background: -webkit-linear-gradient(top, #2b4170, #3b5998);
+                border-color: #334d7a #2f4872 #2a4168;
+                background: -webkit-linear-gradient(top, #597ab6, #49689e);
+                box-shadow: 0 0 3px rgba(51, 77, 122, 0.3);
+            }
+            &#facebook:active {
+                border-color: #334d7a;
+                background: #49689e;
+                box-shadow: inset 0 1px 2px rgba(47, 73, 116, 0.6);
             }
             &#twitter {
-                background-color: #0081ce;
-                /* fallback color */
-                background: -moz-linear-gradient(top, #00aced, #0081ce);
-                background: -ms-linear-gradient(top, #00aced, #0081ce);
-                background: -webkit-linear-gradient(top, #00aced, #0081ce);
-                border: 1px solid #0081ce;
-                text-shadow: 0 -1px -1px #005ea3;
+                text-shadow: 0 -1px 0 #4f8eaf;
+                border-color: #3b88c3;
+                background: -webkit-linear-gradient(top, #55acee, #51a3e2);
             }
             &#twitter:hover {
-                background-color: #00aced;
-                /* fallback color */
-                background: -moz-linear-gradient(top, #0081ce, #00aced);
-                background: -ms-linear-gradient(top, #0081ce, #00aced);
-                background: -webkit-linear-gradient(top, #0081ce, #00aced);
+                border-color: #2f8acb;
+                background: -webkit-linear-gradient(top, #4bb3f2, #47a9e8);
+                box-shadow: 0 0 3px rgba(51, 77, 122, 0.3);
+            }
+            &#twitter:active {
+                border-color: #2f8acb;
+                background: #51a3e2;
+                box-shadow: inset 0 1px 2px rgba(47, 73, 116, 0.2);
             }
             &#join {
                 background-color: white;
